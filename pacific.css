@@ -1,0 +1,218 @@
+* { box-sizing: border-box; }
+header, main, nav, footer, figure, figcaption, aside, section, article { display: block;}
+body {	background-color: #B8DBED;
+	font-family: Arial, Helvetica, sans-serif; }
+#wrapper { margin: 0 auto;
+	    width: 80%;
+            	min-width: 960px;
+	    	max-width: 2048px;
+		margin-left: auto;
+		margin-right: auto;
+	    	background-color: #90C7E3;
+		box-shadow: 3px 3px #333333
+		border: 1px solid #000033;
+		background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);}
+header{ background-color: #000033;
+	color: #FFFFFF; 
+        height: 120px;
+	padding-top: 30px;
+	padding-left: 3em;
+}
+h1 { color: #FFFFFF;
+	margin-bottom: 0;
+	background-position: right;
+	background-repeat: no repeat;
+	height: 60px; 
+	text-align: center;
+	padding-top: 15px;
+	font-family: Georgia, "Times New Roman", serif;
+	margin-top: 0px;
+	font-size: 3em;
+	letter-spacing: .25em;}   
+nav { font-weight: bold;
+      float: left;
+      width: 160px;
+      padding: 1.5em;
+      font-size: 120%; 
+}
+main { margin-left: 190px;
+       background-color: #FFFFFF;
+	   padding: 30px;
+	   display: block;
+	   overflow: auto;
+}
+h2 { color: #47a3d1; 
+	 font-family: Georgia, "Times New Roman", serif; }
+#floatright { float:right; margin: 10px;}
+
+nav ul { list-style-type: none; 
+	margin: 0; 
+	padding-left: 0; 
+	font-size: 1.2em; }
+nav a { text-decoration: none;
+	transition: ease-in-out all 0.3s; 
+}
+nav a:link { color: #5C7FA3; }
+nav a:visited { color: #344873; }
+nav a:hover { color: #A52A2A; } 
+footer {float: all clear;
+	margin-left: 190px;
+	background-color: #FFFFFF;
+	font-style: italic; 
+        font-size: .75em; 
+		 text-align: center; 
+		 padding: 20px 20px 20px 20px;
+}
+table { margin: auto; 
+        border: 2px solid #3399cc; 
+	border-collapse: collapse;
+}
+td, th { padding: 0.5em; 
+	 border: 2px solid #3399cc; 
+}
+td {text-align: center; }
+caption { font-family: Verdana, sans-serif; 
+          font-weight: bold;
+		  font-size: 1.2em; 
+		  padding-bottom: 5px; 
+}
+tr:nth-of-type(odd) { background-color:#f5fafc; }
+label { float: left;
+	display: block;
+	text-align: right;
+	width: 120px;
+	padding-right: 10px; }
+input, textarea { display: block;
+        margin-bottom: 20px; }
+input[type="submit"] { margin-left: 130px; }
+#homehero { background-image: url(coast2.jpg);
+	    margin-left: 190px;
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	    height: 300px;
+}
+#yurthero { background-image: url(yurt.jpg);
+	    margin-left: 190px;
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	    height: 300px;
+}
+#trailhero { background-image: url(trail.jpg);
+	    margin-left: 190px;
+	    background-size: 100% 100%;
+	    background-repeat: no-repeat;
+	    height: 300px;
+}
+video, embed { float: right;
+		height: auto;
+		max-width: 320px; 
+		padding-left: 20px;}
+#gallery { position: relative; }
+#gallery ul {list-style-type: none;
+    	     width: 300px; 
+}
+#gallery li { display: inline; 
+     	 float: left;
+	 padding: 10px; 
+}
+#gallery img { border-style: none;
+}
+#gallery a { text-decoration: none;
+             font-style: italic;  
+             color: #000000; 
+}
+#gallery span { position: absolute;
+                left: -1000px;
+               opacity: 0;
+              transition:  opacity 3s ease-in-out; 
+}
+#gallery a:hover span {     
+			position: absolute;
+			top: 16px;
+			left: 320px; 
+			text-align: center; 
+            opacity: 1; 
+}
+figure {    position: absolute;
+			left: 280px; 
+			text-align: center; 
+            opacity: .25;
+}
+#mobile { display: none;}
+#desktop { display: inline;}
+
+@media only screen and (max-width: 64em) { 
+body {	background-color: #FFFFFF;
+	margin: 0; }
+#wrapper { margin: 0 auto;
+            	min-width: 0px;
+		box-shadow: none;
+		border: none;}
+header{ height: auto;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0em;
+}
+h1 { letter-spacing: 0.1em;}   
+nav { float: none;
+      width: auto;
+      padding: 0.5em;
+      text-align: center;
+}
+main { margin-left: 0px;
+}
+nav li {padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	padding-left: 0.75em;
+	padding-right: 0.75em; 
+	display: inline; }
+footer {margin-left: 0;
+}
+#homehero { background-image: url(coast2.jpg);
+	    margin-left: 0;
+	    height: 200px;
+}
+#yurthero { background-image: url(yurt.jpg);
+	    margin-left: 0;
+	    height: 200px;
+}
+#trailhero { background-image: url(trail.jpg);
+	    margin-left: 0;
+	    height: 200px; }
+}
+
+@media only screen and (max-width: 37.5em) {
+h1 {font-size: 1.5em;
+	}   
+nav { padding: 0;
+}
+main {  padding-top: 0.1em;
+	   padding-bottom: 0.1em;
+	   padding-left: 1em;
+	   padding-right: 1em;
+	   font-size: 90%;
+}
+h2 { color: #47a3d1; 
+	 font-family: Georgia, "Times New Roman", serif; }
+#floatright { float:right; margin: 10px;}
+
+nav li { margin: 0; 
+	bottom-border: 2px solid #330000;
+	display: block; }
+nav a { display: block; 
+}
+label { float: none;
+	text-align: left; }
+input[type="submit"]	{ margin-left:0; }
+#homehero { background-image: none;
+	    height: 0px;
+}
+#yurthero { background-image: none;
+	    height: 0px;
+}
+#trailhero { background-image: none;
+	    height: 0px; }
+#gallery { height: 200px; }
+#mobile { display: inline;}
+#desktop { display: none;}
+}
